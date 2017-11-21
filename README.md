@@ -28,7 +28,7 @@ Il faut ajouter au pom :
         <version>5.2.12.Final</version>
     </dependency>
     
-    <!-- Système de persistance ->
+    <!-- Système de persistance -->
     <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.1-api</artifactId>
