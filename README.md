@@ -10,6 +10,6 @@ Objet du PoC
 
 | **Nom** | **Champs** | **Type** | **Spécificité** |
 |---------|------------|----------|-----------------|
-| iot | id | int | PK auto increment |
+| iot | id | int | :key: auto increment |
 | | value | int | |
 | | date | datetime | |
