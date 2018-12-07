@@ -1,6 +1,11 @@
 # PocSMARTCLASS
 
-Service SOAP qui persiste une entité `(int reference, int value)` avec `reference` correspondant à la référence de l'iot et `value` la valeur qu'il renvoie.
+Simple **POC** pour un projet universitaire. \
+Le principe est simple : on a un serveur (service SOAP) qui écoute et un client qui envoie des messages sur le serveur.
+
+# Fonctionnement
+
+Service SOAP qui persiste une entité composée d'une simple clé `(int reference, int value)` avec `reference` correspondant à la référence de l'iot et `value` la valeur qu'il renvoie.
 
 | **Classe** | **Description** |
 |----------------|-----------------|
@@ -44,16 +49,16 @@ Configuration de la persistence dans le fichier */resources/META-INF/persistence
         <class>server.entities.IotEntity</class>
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-            <property name="hibernate.connection.password" value="poc"/>
+            <property name="hibernate.connection.password" value="pocpwd"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/pocsm"/>
-            <property name="hibernate.connection.username" value="poc"/>
+            <property name="hibernate.connection.username" value="pocuser"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
         </properties>
     </persistence-unit>
 ```
 
-Avec un utilisateur **poc** ayant le mot de passe **poc** et l'accès à la base de données **pocsm**.
-Le driver utilisé ici est du MySQL.
+Avec un utilisateur **pocuser** ayant le mot de passe **pocpwd** et l'accès à la base de données **pocsm**.
+La base de données utilisée ici est du MySQL.
 
 # Database entities
 
